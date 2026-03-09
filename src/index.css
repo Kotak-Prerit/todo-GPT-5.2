@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Google Sans", ui-sans-serif, system-ui, sans-serif;
+    @apply bg-zinc-950 text-zinc-100 antialiased;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+}
